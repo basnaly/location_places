@@ -1,6 +1,6 @@
 
 
-export default function Greeting({userName}) {
+export default function Greeting({ userName }) {
 
     let dayTime = "Morning";
     const todayDay = new Date();
@@ -18,10 +18,10 @@ export default function Greeting({userName}) {
     if (userName === '') {
         userName = 'guest';
     }
-    
+
     return (
-        <div>
-            <div>Good {dayTime}, {userName}!</div>
+        <div className="py-15 text-2xl text-center">
+            Good {dayTime}, {userName}!
         </div>
     )
 }

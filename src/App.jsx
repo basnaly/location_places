@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import Greeting from './components/Greeting';
 import UserData from './components/UserData';
 import Starting from './components/Starting';
@@ -51,7 +50,7 @@ function App() {
 	}, [])
 
 	return (
-		<>
+		<div className="bg-[url('./assets/ai-location.jpg')] bg-(position-10) h-screen">
 			<Greeting
 				userName={userName}
 				setUserName={setUserName}
@@ -60,7 +59,7 @@ function App() {
 				<UserData userLocation={userLocation} /> :
 				<Starting setUserName={setUserName} />
 			}
-		</>
+		</div>
 	)
 }
 
