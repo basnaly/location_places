@@ -11,9 +11,7 @@ export default function Greeting({ userName }) {
         dayTime = "Evening"
     } else if (currentHour > 23 && currentHour < 6) {
         dayTime = "Night"
-    }
-    console.log(currentHour)
-
+    }  
 
     if (userName === '') {
         userName = 'guest';
