@@ -7,7 +7,7 @@ export default function Starting({setUserName}) {
     
     function handleSave() {
         const enteredName = name.current.value;
-		console.log(enteredName)
+		
         if (enteredName.trim() === "") {
             return;
         }
